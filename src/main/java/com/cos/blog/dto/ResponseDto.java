@@ -1,2 +1,13 @@
-package com.cos.blog.dto;public class ResponseDto {
+package com.cos.blog.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseDto<T> {
+    int status;
+    T data;
 }
